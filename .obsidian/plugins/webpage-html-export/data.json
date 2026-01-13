@@ -9,8 +9,8 @@
     "makeHeadersTrees": true,
     "postProcess": true,
     "displayProgress": true,
-    "inlineHTML": true,
-    "exportPath": "C:\\Users\\Usuario\\Downloads\\test",
+    "inlineHTML": false,
+    "exportPath": "C:\\Users\\Usuario\\Downloads",
     "filesToExport": [],
     "useFallbackRenderer": false,
     "addBodyClasses": true,
@@ -68,8 +68,8 @@
     },
     "fileNavigationOptions": {
       "featureId": "file-navigation",
-      "enabled": false,
-      "unavailable": true,
+      "enabled": true,
+      "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "featurePlacement": {
@@ -126,7 +126,7 @@
     "graphViewOptions": {
       "featureId": "graph-view",
       "enabled": false,
-      "unavailable": true,
+      "unavailable": false,
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "featurePlacement": {
@@ -178,7 +178,7 @@
       "hideSettingsButton": false,
       "allowFoldingLists": true,
       "allowFoldingHeadings": true,
-      "documentWidth": "40em"
+      "documentWidth": "50em"
     },
     "rssOptions": {
       "featureId": "rss",
@@ -204,14 +204,14 @@
     "inlineJS": true,
     "inlineFonts": true,
     "inlineOther": true,
-    "combineAsSingleFile": false,
-    "offlineResources": false,
+    "combineAsSingleFile": true,
+    "offlineResources": true,
     "themeName": "",
-    "slugifyPaths": false,
+    "slugifyPaths": true,
     "flattenExportPaths": false,
     "fixLinks": true,
     "faviconPath": "",
-    "siteName": "Kong",
+    "siteName": "Changelog",
     "iconEmojiStyle": "Native",
     "exportRoot": "Kairo/2026_01_13",
     "includePluginCss": [],
@@ -223,7 +223,7 @@
   "rssDateProperty": "date",
   "onlyExportModified": true,
   "deleteOldFiles": true,
-  "exportPreset": "raw-documents",
+  "exportPreset": "local",
   "openAfterExport": true,
   "filePickerBlacklist": [
     "(^|\\/)node_modules\\/",

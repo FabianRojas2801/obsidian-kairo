@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kairo/2026_01_13/1 Arreglos Copias.md",
+                "file": "Kairo/2026_01_13/2 Refactorización Word.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 Arreglos Copias"
+              "title": "2 Refactorización Word"
             }
           }
         ]
@@ -197,8 +197,9 @@
   },
   "active": "e8f746cb87e76375",
   "lastOpenFiles": [
-    "Kairo/Tipos De Datos.md",
     "Kairo/2026_01_13/1 Arreglos Copias.md",
+    "Kairo/2026_01_13/2 Refactorización Word.md",
+    "Kairo/Tipos De Datos.md",
     "Welcome.md",
     "Kairo/2026_01_13",
     "Kairo"
