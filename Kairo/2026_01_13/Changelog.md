@@ -1,3 +1,4 @@
+Martes 13 de enero de 2026
 ## DocumentosCompraFrm.frm
 
 ### `Form_Load`
