@@ -1,3 +1,3 @@
 ## `CuadroResumenIvaFrm.frx`
-Nuevo archivo
+Formulario nuevo
 
