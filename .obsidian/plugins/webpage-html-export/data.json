@@ -205,7 +205,7 @@
     "inlineFonts": true,
     "inlineOther": true,
     "combineAsSingleFile": true,
-    "offlineResources": true,
+    "offlineResources": false,
     "themeName": "",
     "slugifyPaths": true,
     "flattenExportPaths": false,
