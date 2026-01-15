@@ -1,4 +1,8 @@
 {
   "accentColor": "",
-  "nativeMenus": false
+  "nativeMenus": false,
+  "enabledCssSnippets": [
+    "no_wrap_codeblocks",
+    "NoWrapCodeblocks"
+  ]
 }

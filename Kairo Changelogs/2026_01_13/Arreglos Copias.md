@@ -1,4 +1,4 @@
-Martes 13 de enero de 2026
+Martes 13/01/2026, **añadido a Kairo el Miércoles 14/01/2026**.
 ## `DocumentosCompraFrm.frm`
 ### `Form_Load`
 Arreglar carga de copias (al final del método)

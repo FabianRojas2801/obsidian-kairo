@@ -1,3 +1,0 @@
-## `CuadroResumenIvaFrm.frx`
-Formulario nuevo
-

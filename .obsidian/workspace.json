@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kairo/2026_01_14/Cuadro Resumen IVA.md",
-                "mode": "source",
+                "file": "Kairo Changelogs/2026_01_15/Movimientos Inmovilizados.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cuadro Resumen IVA"
+              "title": "Movimientos Inmovilizados"
             }
           }
         ]
@@ -197,14 +197,17 @@
   },
   "active": "e4c1b73ece0654d5",
   "lastOpenFiles": [
+    "Kairo Changelogs/2026_01_15/Cuadro Resumen IVA.md",
+    "Kairo Changelogs/2026_01_15/Movimientos Inmovilizados.md",
+    "Kairo Changelogs/2026_01_13/Arreglos Copias.md",
+    "2026-01-15.md",
+    "Kairo Changelogs/Tipos De Datos.md",
+    "Pasted image 20260114121615.png",
     "Kairo/2026_01_14/2. Inmovilizados.md",
-    "Kairo/2026_01_14/Cuadro Resumen IVA.md",
-    "Kairo/2026_01_13/Arreglos Copias.md",
-    "Kairo/2026_01_14",
+    "Kairo Changelogs/2026_01_15",
     "Kairo/2026_01_13/2 Refactorización Word.md",
-    "Kairo/Tipos De Datos.md",
     "Welcome.md",
-    "Kairo/2026_01_13",
-    "Kairo"
+    "Kairo Changelogs/2026_01_13",
+    "Kairo Changelogs"
   ]
 }
