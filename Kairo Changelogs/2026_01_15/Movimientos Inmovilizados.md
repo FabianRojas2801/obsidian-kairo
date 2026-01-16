@@ -24,17 +24,6 @@ Abrir con Notepad++, buscar `LockControls` y ponerlo en `0 'False`
 
 - - -
 ### `Form_Resize`
-*Debajo* de 
-```vb
-Me.ModificarVehiculoBtn.Left = Me.NuevoVehiculoBtn.Left - Me.NuevoVehiculoBtn.Width - 50
-```
-Añadir
-```vb
-Me.NuevoMovimientoBtn.Top = Me.SalirBtn.Top
-Me.NuevoMovimientoBtn.Left = Me.ModificarVehiculoBtn.Left - Me.NuevoMovimientoBtn.Width - 50
-```
-
-- - -
 
 Añadir
 ```vb
@@ -81,6 +70,8 @@ Me.LabelFiltroProyectoMovimientos.Left = Me.ClienteFiltroMovimientosTxt.Left + M
 Me.ProyectoFiltroMovimientosTxt.Left = Me.LabelFiltroProyectoMovimientos.Left + Me.LabelFiltroProyectoMovimientos.Width
 ```
 
+- - - 
+
 ### `Form_Load`
 Debajo de
 ```vb
@@ -92,6 +83,9 @@ Añadir
 Me.NuevoMovimientoBtn.BackOver = Me.SalirBtn.BackOver
 Me.NuevoMovimientoBtn.ButtonType = Me.SalirBtn.ButtonType
 Me.NuevoMovimientoBtn.ShowFocusRect = Me.SalirBtn.ShowFocusRect
+Me.ActualizarMovimientosBtn.BackOver = Me.SalirBtn.BackOver
+Me.ActualizarMovimientosBtn.ButtonType = Me.SalirBtn.ButtonType
+Me.ActualizarMovimientosBtn.ShowFocusRect = Me.SalirBtn.ShowFocusRect
 ```
 
 - - -
@@ -109,4 +103,69 @@ Me.TabDatosInmovilizado.TabsPerRow = 2
 
 - - -
 
+### `ConfigurarResalteTexto`
+
+Nuevo método, debajo de `SalirBtn_Click`
+
+- - -
 ### `CargaResaltesDeTexto`
+
+Reemplazar por
+```vb
+Private Sub CargaResaltesDeTexto()
+    Call ConfigurarResalteTexto(Me.OperarioTxt, Me.ShapeNuevoTrabajador) 'Edición - Codigo
+    Call ConfigurarResalteTexto(Me.TextPorcentaje, Me.ShapeNuevoTrabajador) 'Edición - Porcentaje
+
+    Call ConfigurarResalteTexto(Me.TextCodigo, Me.ShapeResaltesInmovilizado) 'Edición - Codigo
+    Call ConfigurarResalteTexto(Me.TextDescripcionVehiculo, Me.ShapeResaltesInmovilizado) 'Edición - Descripcion
+    Call ConfigurarResalteTexto(Me.BoxFechaAlta, Me.ShapeResaltesInmovilizado) 'Edición - Fecha Alta
+    Call ConfigurarResalteTexto(Me.BoxFechaBaja, Me.ShapeResaltesInmovilizado) 'Edición - Fecha Baja
+    Call ConfigurarResalteTexto(Me.TextFijo, Me.ShapeResaltesInmovilizado) 'Edición - Fijo
+    
+    Call ConfigurarResalteTexto(Me.TextCodigoFiltro, Me.ShapeResalteFiltros) 'Edición - Filtro Codigo
+    Call ConfigurarResalteTexto(Me.TextDescripcionFiltro, Me.ShapeResalteFiltros) 'Edición - Filtro Descripcion
+    Call ConfigurarResalteTexto(Me.TextTipoFiltro, Me.ShapeResalteFiltros) 'Edición - Filtro Tipo
+    Call ConfigurarResalteTexto(Me.BoxFechaAltaDesde, Me.ShapeResalteFiltros) 'Edición - Filtro Fecha Alta
+    Call ConfigurarResalteTexto(Me.BoxFechaAltaHasta, Me.ShapeResalteFiltros)
+
+    Call ConfigurarResalteTexto(Me.BoxFechaBajaDesde, Me.ShapeResalteFiltros) 'Edición - Filtro Fecha Baja
+    Call ConfigurarResalteTexto(Me.BoxFechaBajaHasta, Me.ShapeResalteFiltros) 'Edición - Filtro Descripcion
+    Call ConfigurarResalteTexto(Me.TextTrabajadorFiltro, Me.ShapeResalteFiltros) 'Edición - Filtro Trabajador
+    Call ConfigurarResalteTexto(Me.BoxFechaChequeo, Me.ShapeNuevoChequeo) 'Edición - Fecha Chequeo
+    Call ConfigurarResalteTexto(Me.TextDescripcionChequeo, Me.ShapeNuevoChequeo) 'Edición - Descripcion Chequeo
+    'Call ConfigurarResalteTexto(Me.EdicionMarcatxt, Me.ShapeNuevoChequeo) 'Edición - Marca
+    
+    Call ConfigurarResalteTexto(Me.OrdenChequeoTxt, Me.Shape42)
+    Call ConfigurarResalteTexto(Me.ActividadTxt, Me.Shape42)
+    
+    Call ConfigurarResalteTexto(Me.BoxFechaChequeo, Me.ShapeNuevoChequeo)
+    Call ConfigurarResalteTexto(Me.ComboEstado, Me.ShapeNuevoChequeo)
+    Call ConfigurarResalteTexto(Me.TextDescripcionChequeo, Me.ShapeNuevoChequeo)
+    
+    Call ConfigurarResalteTexto(Me.FechaFiltroMovimientoDesdeTxt, Me.ShapeFiltrosMovimientos)
+    Call ConfigurarResalteTexto(Me.FechaFiltroMovimientoHastaTxt, Me.ShapeFiltrosMovimientos)
+    Call ConfigurarResalteTexto(Me.TrabajadorFiltroMovimientosTxt, Me.ShapeFiltrosMovimientos)
+    Call ConfigurarResalteTexto(Me.AlmacenFiltroMovimientosTxt, Me.ShapeFiltrosMovimientos)
+    Call ConfigurarResalteTexto(Me.ClienteFiltroMovimientosTxt, Me.ShapeFiltrosMovimientos)
+    Call ConfigurarResalteTexto(Me.ProyectoFiltroMovimientosTxt, Me.ShapeFiltrosMovimientos)
+    
+    Call ConfigurarResalteTexto(Me.FechaNuevoMovimientoTxt, Me.ShapeNuevoMovimiento)
+    Call ConfigurarResalteTexto(Me.ClienteNuevoMovimientoTxt, Me.ShapeNuevoMovimiento)
+    Call ConfigurarResalteTexto(Me.ProyectoNuevoMovimientoTxt, Me.ShapeNuevoMovimiento)
+    Call ConfigurarResalteTexto(Me.TrabajadorNuevoMovimiento, Me.ShapeNuevoMovimiento)
+    Call ConfigurarResalteTexto(Me.ObservacionesNuevoMovimiento, Me.ShapeNuevoMovimiento)
+End Sub
+```
+
+- - -
+
+Debajo de
+```vb
+Me.FrameCostes.BackColor = Blanco
+```
+
+Añadir
+```vb
+Me.FrameMovimientos.BackColor = Blanco
+Me.FrameFiltrosMovimientos.BackColor = Blanco
+```
