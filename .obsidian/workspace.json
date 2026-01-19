@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kairo Changelogs/2026_01_15/Movimientos Inmovilizados.md",
+                "file": "Kairo Changelogs/2026_01_19/Word.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Movimientos Inmovilizados"
+              "title": "Word"
             }
           }
         ],
@@ -254,11 +254,12 @@
   },
   "active": "f3104f982e8401e5",
   "lastOpenFiles": [
-    "Kairo Changelogs/2026_01_13/Arreglos Copias.md",
-    "Kairo Changelogs/2026_01_14/Cuadro Resumen IVA.md",
     "Kairo Changelogs/2026_01_15/Movimientos Inmovilizados.md",
-    "Kairo Changelogs/2026_01_19",
+    "Kairo Changelogs/2026_01_19/Word.md",
+    "Kairo Changelogs/2026_01_14/Cuadro Resumen IVA.md",
     "Kairo Changelogs/Tipos De Datos.md",
+    "Kairo Changelogs/2026_01_13/Arreglos Copias.md",
+    "Kairo Changelogs/2026_01_19",
     "Kairo Changelogs/2026_01_14",
     "Untitled",
     "Kairo Changelogs/2026_01_19/Arreglos varios.md",
