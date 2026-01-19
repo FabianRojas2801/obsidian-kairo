@@ -1,4 +1,4 @@
-Jueves 15/01/2026 - Lunes 19/01/2026 (incluyendo Sábado y Domingo). **Integrado a Kairo el Lunes 19/01/2026**
+Jueves 15/01/2026 - Lunes 19/01/2026 (incluyendo Sábado y Domingo) **añadido a Kairo el Lunes 19/01/2026**
 
 ## `ConfiguraciónBaseDeDatos.bas`
 Añadir
