@@ -9,6 +9,7 @@ Call CrearCampo("Fecha", "Movimientos_Inmovilizado", TipoCampo.TipoFecha, Tamano
 Call CrearCampo("Tipo_Ubicacion", "Movimientos_Inmovilizado", TipoCampo.TipoByte, TamanoTipoCampo(TipoCampo.TipoByte), "0", Base, False)
 Call CrearCampo("Ubicacion_Id", "Movimientos_Inmovilizado", TipoCampo.TipoEnteroLargo, TamanoTipoCampo(TipoCampo.TipoEnteroLargo), "", Base, False)
 Call CrearCampo("Trabajador_Id", "Movimientos_Inmovilizado", TipoCampo.TipoEnteroLargo, TamanoTipoCampo(TipoCampo.TipoEnteroLargo), "", Base, False)
+Call CrearCampo("Observaciones", "Movimientos_Inmovilizado", TipoCampo.TipoMemo, TamanoTipoCampo(TipoCampo.TipoMemo), "", Base, True)
 ```
 
 - - -
