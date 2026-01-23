@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MS SQL SV/2 Kairo Access a MSSQLSV.md",
+                "file": "MS SQL SV/Guía de migración a SQL Server.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2 Kairo Access a MSSQLSV"
+              "title": "Guía de migración a SQL Server"
             }
           }
         ],
@@ -249,17 +249,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f3104f982e8401e5",
+  "active": "13f1f40f3ddda28b",
   "lastOpenFiles": [
-    "MS SQL SV/1 Instalación SQL Server.md",
-    "MS SQL SV/2 Kairo Access a MSSQLSV.md",
+    "MS SQL SV/Img/SSMS_pEmkiSm57m.png",
+    "MS SQL SV/Img/SSMS_lz5mZvV3EM.png",
+    "MS SQL SV/Img/WBwPTEHbIc.png",
+    "MS SQL SV/Img/Obsidian_zCd1PFul8Z.png",
+    "MS SQL SV/Guía de migración a SQL Server.md",
+    "MS SQL SV/Img/odbcad32_Y6Whj1VCBn.png",
+    "Pasted image 20260123115146.png",
+    "MS SQL SV/Img/odbcad32_TMreE54eln.png",
+    "MS SQL SV/Img/odbcad32_njH7wtj2TD.png",
     "MS SQL SV/Img/brave_djfm0AjCY2.png",
+    "MS SQL SV/Img/1wTm6gaNlb.png",
     "MS SQL SV/Img/kwqFVih6aC.png",
-    "MS SQL SV/Img/brave_ptIs6buIOi.png",
-    "MS SQL SV/Img/kwqFVih6aC 1.png",
-    "Pasted image 20260123113209.png",
-    "Pasted image 20260123113213.png",
-    "Pasted image 20260123111356.png",
+    "MS SQL SV/1 Instalación SQL Server.md",
     "MS SQL SV/Img",
     "Kairo Changelogs/2026_01_19/Word.md",
     "MS SQL SV",
@@ -273,7 +277,6 @@
     "Kairo Changelogs/2026_01_19/Arreglos varios.md",
     "Kairo Changelogs/2026_01_19",
     "2026-01-15.md",
-    "Pasted image 20260114121615.png",
     "Kairo/2026_01_14/2. Inmovilizados.md",
     "Kairo Changelogs/2026_01_15",
     "Kairo/2026_01_13/2 Refactorización Word.md",
