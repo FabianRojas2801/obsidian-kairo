@@ -2,6 +2,7 @@
   "accentColor": "",
   "nativeMenus": false,
   "enabledCssSnippets": [
-    "NoWrapCodeblocks"
+    "NoWrapCodeblocks",
+    "no_wrap_codeblocks"
   ]
 }
