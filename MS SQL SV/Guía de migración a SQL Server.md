@@ -26,6 +26,8 @@ Entra a **SQL Server Configuration Manager**
 Entra a **Configuración de red de SQL Server/Protocolos de SQLEXPRESS** y abre **TCP/IP** (doble click)
 - [ ] Bajo **Protocolo** habilita **Escuchar todo** y **Habilitado**
 
+TODO: Habilitar por nombre
+
 Abre CMD como administrador
 - [ ]  Ejecuta
 ```
