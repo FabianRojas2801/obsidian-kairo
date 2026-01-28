@@ -1,4 +1,4 @@
-Lunes 19/01/2026 - Viernes 23/01/2026
+Lunes 19/01/2026 - Viernes 23/01/2026. ==Pendiente pruebas de Nacho==, rama `word`.
 
 ## `ConfiguracionImpresionFrm.frm`
 

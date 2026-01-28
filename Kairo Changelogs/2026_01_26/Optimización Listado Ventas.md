@@ -1,4 +1,4 @@
-Lunes 26/01/2026 - Martes 27/01/2026
+Lunes 26/01/2026 - Martes 27/01/2026. Descartado en la rama `optimizar_autocompletado_ventas`.
 
 ## `DocumentosVentaFrm`
 
