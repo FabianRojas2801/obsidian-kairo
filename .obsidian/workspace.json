@@ -8,20 +8,33 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f3104f982e8401e5",
+            "id": "864ddce19a0c17c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MS SQL SV/Guía de migración a SQL Server.md",
-                "mode": "source",
+                "file": "Casing.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Guía de migración a SQL Server"
+              "title": "Casing"
+            }
+          },
+          {
+            "id": "f3104f982e8401e5",
+            "type": "leaf",
+            "state": {
+              "type": "codeview",
+              "state": {
+                "file": "Casing.bas"
+              },
+              "icon": "lucide-file",
+              "title": "Casing"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,11 +207,26 @@
   },
   "active": "f3104f982e8401e5",
   "lastOpenFiles": [
+    "Kairo Changelogs/2026_01_13/Arreglos Copias.md",
+    "Casing.bas",
+    "Barcodes.md",
+    "Casing 1.vb",
+    "Casing.vb",
+    "Casing.md",
+    "Nuevo documento de texto.txt",
+    "Barcodes/res",
+    "Barcodes",
+    "Kairo Changelogs/2026_01_26/Optimización Listado Ventas.md",
+    "Kairo Changelogs/2026_01_26/SQL Server.md",
+    "Kairo Changelogs/2026_01_19/Word.md",
+    "Kairo Changelogs/2026_01_15/Movimientos Inmovilizados.md",
+    "Kairo Changelogs/2026_01_14/Cuadro Resumen IVA.md",
+    "MS SQL SV/Guía de migración a SQL Server.md",
+    "Kairo Changelogs/Tipos De Datos.md",
+    "Kairo Changelogs/2026_01_26",
     "MS SQL SV/Img/MigradorKairo_q0OJlOwXKB.png",
     "Pasted image 20260123123527.png",
-    "MS SQL SV/Guía de migración a SQL Server.md",
     "MS SQL SV/Img/odbcad32_Y6Whj1VCBn.png",
-    "Kairo Changelogs/2026_01_14/Cuadro Resumen IVA.md",
     "MS SQL SV/Img/Obsidian_zCd1PFul8Z.png",
     "MS SQL SV/Img/kwqFVih6aC.png",
     "MS SQL SV/Img/MigradorKairo_hqfAMZJrtd.png",
@@ -206,25 +234,14 @@
     "MS SQL SV/Img/brave_djfm0AjCY2.png",
     "MS SQL SV/Img/odbcad32_YiE1mLUdDs.png",
     "MS SQL SV/Img/odbcad32_cusa3aZeAU.png",
-    "MS SQL SV/Img/odbcad32_xsAFFjCySB.png",
     "MS SQL SV/1 Instalación SQL Server.md",
     "MS SQL SV/Img",
-    "Kairo Changelogs/2026_01_19/Word.md",
     "MS SQL SV",
-    "Kairo Changelogs/2026_01_15/Movimientos Inmovilizados.md",
     "Nueva carpeta",
-    "Kairo Changelogs/Tipos De Datos.md",
-    "Kairo Changelogs/2026_01_13/Arreglos Copias.md",
-    "Kairo Changelogs/2026_01_19",
-    "Kairo Changelogs/2026_01_14",
     "Kairo Changelogs/2026_01_19/Arreglos varios.md",
-    "Kairo Changelogs/2026_01_19",
     "2026-01-15.md",
     "Kairo/2026_01_14/2. Inmovilizados.md",
-    "Kairo Changelogs/2026_01_15",
     "Kairo/2026_01_13/2 Refactorización Word.md",
-    "Welcome.md",
-    "Kairo Changelogs/2026_01_13",
-    "Kairo Changelogs"
+    "Welcome.md"
   ]
 }

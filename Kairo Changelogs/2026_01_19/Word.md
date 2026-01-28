@@ -1,4 +1,4 @@
-Lunes 19/01/2026 - Jueves 22/01/2026
+Lunes 19/01/2026 - Viernes 23/01/2026
 
 ## `ConfiguracionImpresionFrm.frm`
 
@@ -13,16 +13,14 @@ Public Enum EModoSalidaImpresion
     ModoDocumento = 2
 End Enum
 ```
-- - -
 ### `ImprimirDocumentoVentaCompraWord`
 Método nuevo, debajo de `ImprimirDocumentoVentaCompra`
-- - -
 ### `RellenarDocumentoVentaCompra`
 Método nuevo, debajo del anterior
-- - -
+
 ### `ObtenerConceptoDetalle`
 Método nuevo, debajo del anterior
-- - -
+
 ### `CalculaPosicionImpresion`
 Reemplazar por
 ```vb
@@ -69,15 +67,13 @@ MiRc.Close
 
 End Sub
 ```
-- - -
+
 ## `DocumentoCompraVenta.cls`
 Archivo nuevo
 
-- - -
 ## `DocumentoCompraVentaWord.bas`
 Archivo nuevo
 
-- - -
 ## `DocumentosVentaFrm.frm`
 
 ### `ImprimirDocumentoBtn_Click`
@@ -129,7 +125,6 @@ Private Sub ImprimirDocumentoBtn_Click()
 End Sub
 ```
 
-- - -
 ### `ImprimirWord`
 Función nueva, debajo de la anterior
 ```vb
@@ -250,7 +245,6 @@ If FormatoTPV = True Then Call NuevoDocumentoBtn_Click
 End Sub
 ```
 
-- - -
 ## `DocumentosCompraFrm.frm`
 ### `ImprimirDocumentoBtn_Click`
 **==Renombrar==** a **`ImprimirExcel`**, luego poner el siguiente método arriba
@@ -301,8 +295,6 @@ Private Sub ImprimirDocumentoBtn_Click()
     Set RsPlantilla = Nothing
 End Sub
 ```
-
-- - -
 
 ### `ImprimirWord`
 Función nueva, debajo de la anterior

@@ -1,0 +1,1 @@
+[Documentación los formatos](https://graphicore.github.io/librebarcode/documentation/code39)

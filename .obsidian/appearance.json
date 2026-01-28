@@ -3,6 +3,7 @@
   "nativeMenus": false,
   "enabledCssSnippets": [
     "NoWrapCodeblocks",
-    "no_wrap_codeblocks"
+    "no_wrap_codeblocks",
+    "header_line"
   ]
 }

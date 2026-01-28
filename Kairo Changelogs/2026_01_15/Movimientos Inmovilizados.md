@@ -12,7 +12,6 @@ Call CrearCampo("Trabajador_Id", "Movimientos_Inmovilizado", TipoCampo.TipoEnter
 Call CrearCampo("Observaciones", "Movimientos_Inmovilizado", TipoCampo.TipoMemo, TamanoTipoCampo(TipoCampo.TipoMemo), "", Base, True)
 ```
 
-- - -
 ## `VehiculosFrm.frm`
 
 **Demasiados en código cambios para listar**
