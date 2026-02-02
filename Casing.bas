@@ -33,3 +33,7 @@ Dim NombreImpresora
 Dim Count
 Dim RsCantidad
 Dim RsArticulos
+Dim Direction
+Dim Empresa
+Dim Contrato
+Dim Importe
