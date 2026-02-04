@@ -14,6 +14,9 @@ Dim Copias As Long
 Añadir
 ```vb
 Dim PidExcel As Long
+Dim DejarExcelAbierto As Boolean
+
+DejarExcelAbierto = False
 ```
 
 - - -
@@ -54,7 +57,7 @@ Debajo de
 Call ControlarNuevosFicherosImpresion(IdExpediente)
 ```
 
-Reemplazar el siguiente código
+**Reemplazar** el siguiente código
 ```vb
 xLibro.Close True
 ObjExcel.Quit
@@ -62,7 +65,9 @@ ObjExcel.Quit
 
 Por
 ```vb
-Call CerrarExcelSeguro(ObjExcel, xLibro, Hoja, PidExcel)
+If Not DejarExcelAbierto Then
+    Call CerrarExcelSeguro(ObjExcel, xLibro, Hoja, PidExcel)
+End If
 ```
 - - -
 Arriba de
@@ -74,3 +79,15 @@ Añadir
 ```vb
 Call CerrarExcelSeguro(ObjExcel, xLibro, Hoja, PidExcel)
 ```
+
+- - -
+Debajo de 
+```vb
+ZExe = ShellExecute(Control.hWnd, "Open", NombreFicheroDestino, "", "", 1)
+```
+
+Añade
+```vb
+DejarExcelAbierto = True
+```
+****

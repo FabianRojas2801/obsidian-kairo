@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "Kairo Changelogs/2026_02_03/Arreglo Excel.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -207,7 +207,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9d311c78409672ef",
+  "active": "0ff3c47f00a7a7d0",
   "lastOpenFiles": [
     "Kairo Changelogs/Tipos De Datos.md",
     "Kairo Changelogs/2026_02_03/Arreglo Excel.md",
