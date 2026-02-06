@@ -25,14 +25,12 @@
             "id": "71de0e3c9c3e4cbb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "codeview",
               "state": {
-                "file": "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
-                "mode": "source",
-                "source": false
+                "file": "Casing.bas"
               },
               "icon": "lucide-file",
-              "title": "Economía Inmovilizados"
+              "title": "Casing"
             }
           }
         ],
@@ -195,7 +193,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 286.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,10 +207,10 @@
   },
   "active": "71de0e3c9c3e4cbb",
   "lastOpenFiles": [
-    "Casing.bas",
+    "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
     "Kairo Changelogs/2026_02_03/Arreglo Excel.md",
     "Kairo Changelogs/2026_02_04/res/VB6_vpNvQ0R5dC.jpg",
-    "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
+    "Casing.bas",
     "Kairo Changelogs/2026_02_04/res",
     "Kairo Changelogs/2026_02_04",
     "Untitled",

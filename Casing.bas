@@ -37,3 +37,5 @@ Dim Direction
 Dim Empresa
 Dim Contrato
 Dim Importe
+Dim Totales
+Dim RsFacturas

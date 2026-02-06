@@ -11,11 +11,42 @@ Añadir
 ```vb
 Private CuentaResultadoFrm As VehiculosCuentaResultadoFrm
 ```
-
+- - -
+Borrar
+```vb
+Private Enum ColGRC
+    id_ColGRC = 0
+    tipo_ColGRC = 1
+    total_ColGRC = 2
+    primeraColDinamica_ColGRC = 3
+End Enum
+```
+- - -
+Borrar
+```vb
+Private Enum Mes3L
+    Ene = 1
+    Feb = 2
+    Mar = 3
+    Abr = 4
+    May = 5
+    Jun = 6
+    Jul = 7
+    Ago = 8
+    Sep = 9
+    Oct = 10
+    Nov = 11
+    dic = 12
+End Enum
+```
 ### Controles
 - [ ] Cambiar el caption del primer tab de `FrameCostes` a **"Cuenta Resultado"**
 - [ ] Borrar `FrameResumenCostes`
-- [ ] Insertar una [imagen](obsidian://open?vault=Kong&file=Kairo%20Changelogs%2F2026_02_04%2Fres%2FVB6_vpNvQ0R5dC.jpg) con el nombre `ImageTabCuentaResultado`
+- [ ] Insertar un  **`PictureBox`** con las siguientes propiedades:
+	- [ ] Nombre: `PictureCuentaResultado`
+	- [ ] Left: 75
+	- [ ] Top: 465
+	- [ ] BorderStyle: 0 - None
 
 ### `FrameCostes_Click`
 Reemplazar
@@ -27,10 +58,69 @@ Por
 ```vb
 Call CuentaResultadoFrm.Mostrar
 ```
-### `Form_Load`
-Añadir al comienzo
+
+### `FrameCostes_Click`
+Reemplazar
 ```vb
-Set CuentaResultadoFrm = new VehiculosCuentaResultadoFrm
+Call RellenarGridResumenCostes
+Call RellenarFechaResumenCostes
+```
+
+Por
+```vb
+Call CuentaResultadoFrm.Mostrar
+```
+
+### `TabDatosInmovilizado_Click`
+Reemplazar
+```vb
+Call RellenarGridResumenCostes
+Call RellenarFechaResumenCostes
+```
+
+Por
+```vb
+Call CuentaResultadoFrm.Mostrar
+```
+
+### `GridDatosInmovilizado_Click`
+Reemplazar
+```vb
+Call RellenarGridResumenCostes
+Call RellenarFechaResumenCostes
+```
+
+Por
+```vb
+Call CuentaResultadoFrm.Mostrar
+```
+
+### `rellenarFrameDatosInmovilizados`
+Debajo de
+```vb
+Me.LabelIdInmovilizado.Caption = Id
+```
+
+Añadir
+```vb
+CuentaResultadoFrm.IdInmovilizado = Id
+```
+
+### `Form_Load`
+Debajo de
+```vb
+'Configurando formulario
+If Me.WindowState <> 1 Then
+    Me.Icon = EntornoFrm.ListaImagenesEntornoAgora.ListImages(3).Picture
+    Call PosicionAbsolutaFormulario(Me)
+End If
+```
+
+Añadir
+```vb
+Set CuentaResultadoFrm = New VehiculosCuentaResultadoFrm
+Set CuentaResultadoFrm.Padre = Me
+Call HostFormInContainer(CuentaResultadoFrm, Me.PictureCuentaResultado)
 ```
 
 - - -
@@ -101,12 +191,26 @@ Me.GridResumenCostes.ColSel = Me.GridResumenCostes.Cols - 1
 ```
 
 ### `Form_Resize`
-Borrar
+Añadir al final
+
+Reemplazar
 ```vb
 Me.FrameResumenCostes.Top = Me.FrameCostes.Top
 Me.FrameResumenCostes.Left = Me.FrameCostes.Left
 Me.FrameResumenCostes.Width = Me.FrameCostes.Width - 20
 Me.FrameResumenCostes.Height = Me.FrameCostes.Height - Me.FrameFactura.Top
+```
+
+Por
+```vb
+Me.PictureCuentaResultado.Top = Me.FrameCostes.Top
+Me.PictureCuentaResultado.Left = Me.FrameCostes.Left
+Me.PictureCuentaResultado.Width = Me.FrameCostes.Width - 20
+Me.PictureCuentaResultado.Height = Me.FrameCostes.Height - Me.FrameFactura.Top
+
+If Not CuentaResultadoFrm Is Nothing Then
+    Call ResizeHostedForm(CuentaResultadoFrm, Me.PictureCuentaResultado)
+End If
 ```
 
 - - -
@@ -158,4 +262,4 @@ Call ConfigurarResalteTexto(Me.FHastaRCTxt, Me.ShapeResumenCostes)
 - [ ] FHastaRCTxt_KeyPress
 - [ ] FHastaRCTxt_LostFocus
 - [ ] FiltrosRCBtn_Click
-- [ ] 
+- [ ] NzDbl
