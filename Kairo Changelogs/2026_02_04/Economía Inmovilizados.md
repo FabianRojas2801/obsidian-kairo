@@ -12,3 +12,5 @@ Archivo nuevo, contiene el contenido del tab "Resumen Económico"
 > [!todo]
 > FECHAS, RESALTE CAMPOS DE TEXTO, AUTOCOMPLETADOS
 
+## `FormHost.cls`
+Archivo nuevo, tiene utilidades para incrustar formularios dentro de otros formularios.
