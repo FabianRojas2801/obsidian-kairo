@@ -22,19 +22,49 @@
             }
           },
           {
-            "id": "71de0e3c9c3e4cbb",
+            "id": "b1f97c4ad0dd79a9",
             "type": "leaf",
             "state": {
-              "type": "codeview",
+              "type": "markdown",
               "state": {
-                "file": "Casing.bas"
+                "file": "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Casing"
+              "title": "Economía Inmovilizados"
+            }
+          },
+          {
+            "id": "d12cd433bc3e190f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Economía Inmovilizados"
+            }
+          },
+          {
+            "id": "a9a49d24e6c8bc11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Economía Inmovilizados"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -205,16 +235,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "71de0e3c9c3e4cbb",
+  "active": "a9a49d24e6c8bc11",
   "lastOpenFiles": [
-    "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
-    "Kairo Changelogs/2026_02_03/Arreglo Excel.md",
-    "Kairo Changelogs/2026_02_04/res/VB6_vpNvQ0R5dC.jpg",
     "Casing.bas",
+    "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
+    "Kairo Changelogs/2026_02_04/Notas.md",
+    "Untitled.md",
+    "Kairo Changelogs/Tipos De Datos.md",
+    "Kairo Changelogs/2026_02_04/res/VB6_vpNvQ0R5dC.jpg",
+    "Ramas Activas Kairo.md",
+    "Untitled.base",
+    "Kairo Changelogs/2026_02_03/Arreglo Excel.md",
     "Kairo Changelogs/2026_02_04/res",
     "Kairo Changelogs/2026_02_04",
     "Untitled",
-    "Kairo Changelogs/Tipos De Datos.md",
     "Kairo Changelogs/2026_01_15/Movimientos Inmovilizados.md",
     "Kairo Changelogs/2026_01_19/Word.md",
     "Kairo Changelogs/2026_01_26/Optimización Listado Ventas.md",
@@ -222,11 +256,8 @@
     "Kairo Changelogs/2026_01_30/Proyectos agrupación por contrato.md",
     "Kairo Changelogs/2026_02_03",
     "Kairo Changelogs/2026_01_30/Notas.md",
-    "Untitled.base",
     "Kairo Changelogs/2026_01_29/Arreglos de qsy.md",
     "Kedeke.md",
-    "Ramas Activas Kairo.md",
-    "Untitled.md",
     "Kairo Changelogs/2026_01_30",
     "Kairo Changelogs/2026_01_30",
     "Untitled 1",
@@ -250,7 +281,6 @@
     "MS SQL SV/1 Instalación SQL Server.md",
     "Kairo Changelogs/2026_01_19/Arreglos varios.md",
     "2026-01-15.md",
-    "Kairo/2026_01_14/2. Inmovilizados.md",
-    "Kairo/2026_01_13/2 Refactorización Word.md"
+    "Kairo/2026_01_14/2. Inmovilizados.md"
   ]
 }

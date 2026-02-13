@@ -1,41 +1,42 @@
-Dim Value
-Dim PADDING
-Dim CuotaIva
-Dim Iva
-Dim CantidadFilas
-Dim Grid
-Dim Sql
-Dim Valor
-Dim Rs
-Dim Chk
-Dim X
-Dim Y
-Dim HorizontalAlignment
-Dim Top
-Dim Nombre
-Dim Observaciones_Pie
-Dim Precio
-Dim Articulo_Id
-Dim IIf
-Dim Clave
-Dim Campos
-Dim TipoDoc
-Dim Usuario
-Dim CIF
-Dim Direccion
-Dim Codigo_Postal
-Dim Provincia
-Dim Telefono_1
-Dim Telefono_2
-Dim Modo
-Dim NombreEmpresa
-Dim NombreImpresora
-Dim Count
-Dim RsCantidad
-Dim RsArticulos
-Dim Direction
-Dim Empresa
-Dim Contrato
-Dim Importe
-Dim Totales
-Dim RsFacturas
+    Dim Value
+    Dim PADDING
+    Dim CuotaIva
+    Dim Iva
+    Dim CantidadFilas
+    Dim Grid
+    Dim Sql
+    Dim Valor
+    Dim Rs
+    Dim Chk
+    Dim X
+    Dim Y
+    Dim HorizontalAlignment
+    Dim Top
+    Dim Nombre
+    Dim Observaciones_Pie
+    Dim Precio
+    Dim Articulo_Id
+    Dim IIf
+    Dim Clave
+    Dim Campos
+    Dim TipoDoc
+    Dim Usuario
+    Dim CIF
+    Dim Direccion
+    Dim Codigo_Postal
+    Dim Provincia
+    Dim Telefono_1
+    Dim Telefono_2
+    Dim Modo
+    Dim NombreEmpresa
+    Dim NombreImpresora
+    Dim Count
+    Dim RsCantidad
+    Dim RsArticulos
+    Dim Direction
+    Dim Empresa
+    Dim Contrato
+    Dim Importe
+    Dim Totales
+    Dim RsFacturas
+    Dim Facturas

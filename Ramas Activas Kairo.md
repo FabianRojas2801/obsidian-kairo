@@ -7,3 +7,7 @@
 
 # `proyecto_contratos`
 [[Proyectos agrupación por contrato]]
+
+# `economia_inmovilizados`
+[[Economía Inmovilizados]]
+
