@@ -1,1 +1,0 @@
-He investigado cómo hacer una aplicación en .NET WPF

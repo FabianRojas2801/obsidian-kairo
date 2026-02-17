@@ -36,31 +36,17 @@
             }
           },
           {
-            "id": "d12cd433bc3e190f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Toldos/2026_02_16/Investigación.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Investigación"
-            }
-          },
-          {
             "id": "a9a49d24e6c8bc11",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
-                "mode": "source",
+                "file": "Toldos Excel.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Economía Inmovilizados"
+              "title": "Toldos Excel"
             }
           },
           {
@@ -237,7 +223,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5
+    "width": 245.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -249,10 +235,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d12cd433bc3e190f",
+  "active": "a9a49d24e6c8bc11",
   "lastOpenFiles": [
-    "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
+    "Untitled.md",
+    "Toldos Excel.md",
+    "Kedeke.md",
     "Toldos/2026_02_16/Investigación.md",
+    "Toldos/Untitled",
+    "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
     "Toldos/2026_02_16",
     "Toldos",
     "Kairo Changelogs/2026_01_30/Proyectos agrupación por contrato.md",
@@ -260,7 +250,6 @@
     "Kairo Changelogs/2026_02_03/Arreglo Excel.md",
     "Casing.bas",
     "Kairo Changelogs/2026_02_04/Notas.md",
-    "Untitled.md",
     "Kairo Changelogs/Tipos De Datos.md",
     "Kairo Changelogs/2026_02_04/res/VB6_vpNvQ0R5dC.jpg",
     "Ramas Activas Kairo.md",
@@ -273,10 +262,8 @@
     "Kairo Changelogs/2026_01_28/Optimización Grabar Línea Detalle.md",
     "Kairo Changelogs/2026_02_03",
     "Kairo Changelogs/2026_01_29/Arreglos de qsy.md",
-    "Kedeke.md",
     "Kairo Changelogs/2026_01_30",
     "Kairo Changelogs/2026_01_30",
-    "Untitled 1",
     "Kairo Changelogs/2026_01_26/SQL Server.md",
     "Barcodes.md",
     "MS SQL SV/Guía de migración a SQL Server.md",
@@ -295,7 +282,6 @@
     "MS SQL SV/Img/kwqFVih6aC.png",
     "MS SQL SV/1 Instalación SQL Server.md",
     "Kairo Changelogs/2026_01_19/Arreglos varios.md",
-    "2026-01-15.md",
-    "Kairo/2026_01_14/2. Inmovilizados.md"
+    "2026-01-15.md"
   ]
 }
