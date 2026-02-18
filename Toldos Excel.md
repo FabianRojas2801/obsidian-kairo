@@ -2,7 +2,7 @@
 En todas las filas, $\text{Precio}$ corresponde a $\text{Cantidad} \mul \text{Precio}$ redondeado a **2 decimales**.
 
 # Jgo Soporte
-- - **Precio:** Corresponde a la tabla "Brazo Invisible Epsylon", fila **Jgo. Sop. Epsylon** columna **C/Dto**
+- **Precio:** Corresponde a la tabla "Brazo Invisible Epsylon", fila **Jgo. Sop. Epsylon** columna **C/Dto**
 
 # Lona
 
@@ -43,32 +43,98 @@ $$
 $$
 \begin{flalign}
 \text{Cantidad P. Delfin (m)}=
-f(\text{Linea})=
 \begin{cases}
-2{,}5 & \si \text{Linea}\le 250\\
-3{,}  & \si 250<\text{Linea}\le 300\\
-3{,}5 & \si 300<\text{Linea}\le 350\\
-5     & \si 350<\text{Linea}\le 500\\
-6     & \si 500<\text{Linea}\le 600\\
-7     & \si \text{Linea}>600
+2{,}5 & \text{si } \text{Linea}\le 250\\
+3{,}  & \text{si } 250<\text{Linea}\le 300\\
+3{,}5 & \text{si } 300<\text{Linea}\le 350\\
+5     & \text{si } 350<\text{Linea}\le 500\\
+6     & \text{si } 500<\text{Linea}\le 600\\
+7     & \text{si } \text{Linea}>600
 \end{cases} &&
 \end{flalign}
 $$
-- **Precio:** 
+- **Precio:** Selecciona entre dos valores de la tabla a la derecha de la tabla "**Brazo Invisible Epsylon**", de `G3` a `K18`
+Si $\text{Linea} \leq 500$ y $\text{Salida} \leq 275$ el precio es "**Perfil carga Delfin Ø75**", en caso contrario es "**Perfil carga Delfin Ø 100**", en ambos caso se selecciona la columna **Precio**.
+$$
+\begin{flalign}
+\text{Precio P.Delfin (m) = }
+\begin{cases}
+\text{Precio Perfil carga } \diameter 75,  & \text{si } (\text{Linea}\le 500)\land(\text{Salida}\le 275)\\
+\text{Precio Perfil carga } \diameter 100, & \text{en otro caso}
+\end{cases} &&
+\end{flalign}
+$$
+# Tapetas
+- **Precio:** Selecciona entre dos valores de la tabla a la derecha de la tabla "**Brazo Invisible Epsylon**", de `G3` a `K18`
+Si $\text{Linea} \geq 500$ o $\text{Salida} \gt 250$ el precio es "**Tapetas  Delfin Ø 75**", en caso contrario es "**Tapetas  Delfin Ø 100**", en ambos casos se selecciona la columna **Precio**.
+$$
+\begin{flalign}
+\text{Precio Tapetas} =
+\begin{cases}
+\text{Precio Tapetas Delfin } \diameter 100 & \text{si } (\text{Linea} \geq 500) \lor (\text{Salida} \gt 250)\\
+\text{Precio Tapetas Delfin } \diameter 75 & \text{en otro caso}
+\end {cases} &&
+\end{flalign}
+$$
+
 # T.Enrolle
 - **Cantidad:** Es un valor "por tramos" según el valor de `Linea` (exactamente igual que `P. Delfin (m)`)
 $$
 \begin{flalign}
 \text{Cantidad T.Enrolle}=
-f(\text{Linea})=
 \begin{cases}
-2{,}5 & \si \text{Linea}\le 250\\
-3     & \si 250<\text{Linea}\le 300\\
-3{,}5 & \si 300<\text{Linea}\le 350\\
-5     & \si 350<\text{Linea}\le 500\\
-6     & \si 500<\text{Linea}\le 600\\
-7     & \si \text{Linea}>600
+2{,}5 & \text{si } \text{Linea}\le 250\\
+3     & \text{si } 250<\text{Linea}\le 300\\
+3{,}5 & \text{si } 300<\text{Linea}\le 350\\
+5     & \text{si } 350<\text{Linea}\le 500\\
+6     & \text{si } 500<\text{Linea}\le 600\\
+7     & \text{si } \text{Linea}>600
 \end{cases} &&
 \end{flalign}
 $$
 
+- **Precio:** Selecciona entre dos valores de la tabla a la derecha de la tabla "**Brazo Invisible Epsylon**", de `G3` a `K18`
+Si $\text{Linea} \leq 500$ y $\text{Salida} \leq 275$ el precio es "**Tubo enrrolle Ø 70**", en caso contrario es "**Tubo enrrolle Ø 80**", en ambos casos se selecciona la columna **Precio**.
+
+$$
+\begin{flalign}
+\text{Precio T.Enrolle} =
+\begin{cases}
+\text{Precio T.Enrolle } \diameter 70 & \text{si } (\text{Linea} \leq 500) \land (\text{Salida} \leq 275)\\
+\text{Precio T.Enrolle } \diameter 80 & \text{en otro caso}
+\end {cases} &&
+\end{flalign}
+$$
+
+# Casquillo
+- **Precio:** Suma 2 valores de la tabla a la derecha de la tabla "**Brazo Invisible Epsylon**", de `G3` a `K18`.
+Si $\text{Linea} \leq 500$ y $\text{Salida} \leq 275$ se suman "**Casquillo Ø 70**" y "**Casq. Maquina Ø 70**", en caso contrario se suman "**Casquillo Ø 80**" y "**Casq. Maquina Ø 80 nylon**"
+$$
+\begin{flalign}
+\text{Precio Casquillo}=
+\begin{cases}
+\text{Precio Casquillo Ø 70} + \text{Precio Casq. Maquina Ø 70} &
+\text{si } (\text{Linea} \leq 500) \land (\text{Salida} \leq 275) \\
+\text{Precio Casquillo Ø 80} + \text{Precio Casq. Maquina Ø 80 nylon} &
+\text{en otro caso}
+\end{cases}
+\end{flalign}
+$$
+
+# Brazos
+- **Precio:** Corresponde a la tercera tabla superior, fila corresponde a **Salida** y la columna **Precio**.
+Si **Salida** no coincide con ninguna fila, se usa la fila inmediatamente inferior a Salida.
+
+
+# Costos GVM
+La suma de todos los totales anteriores.
+
+# Tarifa GVM
+Calcula la "**Tarifa GVM**" a partir de "**Costos GVM**", aplicando primero los recargos de "**Gastos Gen**." y "**Ganancias**", y después convirtiendo ese precio "neto" en un precio de tarifa antes de aplicar el “Descuento”. Al final redondea a 1 decimal.
+
+$$
+\begin{flalign}
+\text{Tarifa GVM} = 
+\text{CostosGVM} \mul (1 + \frac{\text{GastosGen}}{100}+\frac{\text{Ganancias}}{100}) \div (1 - \frac{\text{Descuento}}{100}) &&
+\end{flalign}
+$$

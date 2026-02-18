@@ -1,6 +1,10 @@
 {
   "readableLineLength": false,
   "showUnsupportedFiles": false,
-  "showInlineTitle": false,
-  "showLineNumber": false
+  "showInlineTitle": true,
+  "showLineNumber": false,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./res",
+  "newLinkFormat": "absolute",
+  "useMarkdownLinks": true
 }

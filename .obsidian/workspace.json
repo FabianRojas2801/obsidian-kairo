@@ -43,7 +43,7 @@
               "state": {
                 "file": "Toldos Excel.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Toldos Excel"
@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kairo Changelogs/2026_01_30/Proyectos agrupación por contrato.md",
+                "file": "Toldos Excel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Proyectos agrupación por contrato"
+              "title": "Toldos Excel"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -235,19 +235,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a9a49d24e6c8bc11",
+  "active": "9d311c78409672ef",
   "lastOpenFiles": [
-    "preamble.sty",
+    "head.html",
     "Nuevo documento de texto.txt",
-    "Untitled.md",
     "Toldos Excel.md",
+    "Kairo Changelogs/2026_01_30/Proyectos agrupación por contrato.md",
+    "preamble.sty",
+    "Untitled.md",
     "Kedeke.md",
     "Toldos/2026_02_16/Investigación.md",
     "Toldos/Untitled",
     "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
     "Toldos/2026_02_16",
     "Toldos",
-    "Kairo Changelogs/2026_01_30/Proyectos agrupación por contrato.md",
     "Kairo Changelogs/2026_01_30/Notas.md",
     "Kairo Changelogs/2026_02_03/Arreglo Excel.md",
     "Casing.bas",
@@ -264,7 +265,6 @@
     "Kairo Changelogs/2026_01_28/Optimización Grabar Línea Detalle.md",
     "Kairo Changelogs/2026_02_03",
     "Kairo Changelogs/2026_01_29/Arreglos de qsy.md",
-    "Kairo Changelogs/2026_01_30",
     "Kairo Changelogs/2026_01_26/SQL Server.md",
     "Barcodes.md",
     "MS SQL SV/Guía de migración a SQL Server.md",
