@@ -42,7 +42,7 @@
               "type": "markdown",
               "state": {
                 "file": "Toldos Excel.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -237,6 +237,8 @@
   },
   "active": "a9a49d24e6c8bc11",
   "lastOpenFiles": [
+    "preamble.sty",
+    "Nuevo documento de texto.txt",
     "Untitled.md",
     "Toldos Excel.md",
     "Kedeke.md",
@@ -263,7 +265,6 @@
     "Kairo Changelogs/2026_02_03",
     "Kairo Changelogs/2026_01_29/Arreglos de qsy.md",
     "Kairo Changelogs/2026_01_30",
-    "Kairo Changelogs/2026_01_30",
     "Kairo Changelogs/2026_01_26/SQL Server.md",
     "Barcodes.md",
     "MS SQL SV/Guía de migración a SQL Server.md",
@@ -281,7 +282,6 @@
     "MS SQL SV/Img/Obsidian_zCd1PFul8Z.png",
     "MS SQL SV/Img/kwqFVih6aC.png",
     "MS SQL SV/1 Instalación SQL Server.md",
-    "Kairo Changelogs/2026_01_19/Arreglos varios.md",
-    "2026-01-15.md"
+    "Kairo Changelogs/2026_01_19/Arreglos varios.md"
   ]
 }
