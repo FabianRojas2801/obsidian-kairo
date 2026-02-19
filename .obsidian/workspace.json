@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f1dc73fdbb612215",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "codeview",
-              "state": {
-                "file": "Casing.bas"
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Casing"
-            }
-          },
-          {
             "id": "b1f97c4ad0dd79a9",
             "type": "leaf",
             "state": {
@@ -41,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Toldos Excel.md",
+                "file": "Toldos/Brazo Invisible Epsylon.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Toldos Excel"
+              "title": "Brazo Invisible Epsylon"
             }
           },
           {
@@ -55,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Toldos Excel.md",
-                "mode": "source",
+                "file": "Casing.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Toldos Excel"
+              "title": "Casing"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -235,14 +221,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9d311c78409672ef",
+  "active": "49307542428e8be2",
   "lastOpenFiles": [
+    "Casing.bas",
+    "Casing.md",
+    "Untitled.md",
+    "Toldos/Brazo Invisible Epsylon.md",
+    "Toldos",
     "head.html",
     "Nuevo documento de texto.txt",
-    "Toldos Excel.md",
     "Kairo Changelogs/2026_01_30/Proyectos agrupación por contrato.md",
     "preamble.sty",
-    "Untitled.md",
     "Kedeke.md",
     "Toldos/2026_02_16/Investigación.md",
     "Toldos/Untitled",
@@ -251,19 +240,16 @@
     "Toldos",
     "Kairo Changelogs/2026_01_30/Notas.md",
     "Kairo Changelogs/2026_02_03/Arreglo Excel.md",
-    "Casing.bas",
     "Kairo Changelogs/2026_02_04/Notas.md",
     "Kairo Changelogs/Tipos De Datos.md",
     "Kairo Changelogs/2026_02_04/res/VB6_vpNvQ0R5dC.jpg",
     "Ramas Activas Kairo.md",
     "Untitled.base",
     "Kairo Changelogs/2026_02_04/res",
-    "Kairo Changelogs/2026_02_04",
     "Kairo Changelogs/2026_01_15/Movimientos Inmovilizados.md",
     "Kairo Changelogs/2026_01_19/Word.md",
     "Kairo Changelogs/2026_01_26/Optimización Listado Ventas.md",
     "Kairo Changelogs/2026_01_28/Optimización Grabar Línea Detalle.md",
-    "Kairo Changelogs/2026_02_03",
     "Kairo Changelogs/2026_01_29/Arreglos de qsy.md",
     "Kairo Changelogs/2026_01_26/SQL Server.md",
     "Barcodes.md",
@@ -281,7 +267,6 @@
     "Pasted image 20260123123527.png",
     "MS SQL SV/Img/Obsidian_zCd1PFul8Z.png",
     "MS SQL SV/Img/kwqFVih6aC.png",
-    "MS SQL SV/1 Instalación SQL Server.md",
-    "Kairo Changelogs/2026_01_19/Arreglos varios.md"
+    "MS SQL SV/1 Instalación SQL Server.md"
   ]
 }
