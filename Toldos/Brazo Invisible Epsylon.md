@@ -33,7 +33,7 @@ $$
 - **Cantidad:** Realiza la siguiente fórmula:  $\text{Linea} \div 100$
 $$
 \begin{flalign}
-\text{Cantidad Vivo} = \frac{\text{Salida}}{100} &&
+\text{Cantidad Vivo} = \frac{\text{Linea}}{100} &&
 \end{flalign}
 $$
 # Taco+Tornillo
@@ -53,7 +53,7 @@ $$
 \end{cases} &&
 \end{flalign}
 $$
-- **Precio:** Selecciona entre dos valores de la tabla a la derecha de la tabla "**Brazo Invisible Epsylon**", de `G3` a `K18`
+- **Precio:** Selecciona entre dos valores de la segunda tabla superior, de `G3` a `K18`
 Si $\text{Linea} \leq 500$ y $\text{Salida} \leq 275$ el precio es "**Perfil carga Delfin Ø75**", en caso contrario es "**Perfil carga Delfin Ø 100**", en ambos caso se selecciona la columna **Precio**.
 $$
 \begin{flalign}
@@ -65,8 +65,8 @@ $$
 \end{flalign}
 $$
 # Tapetas
-- **Precio:** Selecciona entre dos valores de la tabla a la derecha de la tabla "**Brazo Invisible Epsylon**", de `G3` a `K18`
-Si $\text{Linea} \geq 500$ o $\text{Salida} \gt 250$ el precio es "**Tapetas  Delfin Ø 75**", en caso contrario es "**Tapetas  Delfin Ø 100**", en ambos casos se selecciona la columna **Precio**.
+- **Precio:** Selecciona entre dos valores de la segunda tabla superior, de `G3` a `K18`
+Si $\text{Linea} \geq 500$ o $\text{Salida} \gt 250$ el precio es "**Tapetas  Delfin Ø 100**", en caso contrario es "**Tapetas  Delfin Ø 75**", en ambos casos se selecciona la columna **Precio**.
 $$
 \begin{flalign}
 \text{Precio Tapetas} =
@@ -93,7 +93,7 @@ $$
 \end{flalign}
 $$
 
-- **Precio:** Selecciona entre dos valores de la tabla a la derecha de la tabla "**Brazo Invisible Epsylon**", de `G3` a `K18`
+- **Precio:** Selecciona entre dos valores de la segunda tabla superior, de `G3` a `K18`
 Si $\text{Linea} \leq 500$ y $\text{Salida} \leq 275$ el precio es "**Tubo enrrolle Ø 70**", en caso contrario es "**Tubo enrrolle Ø 80**", en ambos casos se selecciona la columna **Precio**.
 
 $$
@@ -107,7 +107,7 @@ $$
 $$
 
 # Casquillo
-- **Precio:** Suma 2 valores de la tabla a la derecha de la tabla "**Brazo Invisible Epsylon**", de `G3` a `K18`.
+- **Precio:** Suma 2 valores de la segunda tabla superior, de `G3` a `K18`.
 Si $\text{Linea} \leq 500$ y $\text{Salida} \leq 275$ se suman "**Casquillo Ø 70**" y "**Casq. Maquina Ø 70**", en caso contrario se suman "**Casquillo Ø 80**" y "**Casq. Maquina Ø 80 nylon**"
 $$
 \begin{flalign}
@@ -125,6 +125,24 @@ $$
 - **Precio:** Corresponde a la tercera tabla superior, fila corresponde a **Salida** y la columna **Precio**.
 Si **Salida** no coincide con ninguna fila, se usa la fila inmediatamente inferior a Salida.
 
+# Cruce
+Solo presente en las hojas `BI_Cruce` y `BI_Cruce_EpsyDlux`.
+- **Precio:** Corresponde a la segunda tabla superior, fila "**Cruce Vinci**" y la columna **Precio**
+
+# Tranformadoor, Transfo
+Solo presente en las hojas `BI_EpsyDLUX` (como `Transformadoor`) y `BI_Cruce_EpsyDlux` (como `Transfo`).
+- **Potencia:** *Es un valor calculado internamente, no se muestra en ninguna celda.* Corresponde a la tabla "**Brazos B. I.**", fila **Salida** y columna **Potencia**, si **Salida** no coincide con ninguna fila, se usa la fila inmediatamente inferior a Salida.
+- **Precio:** Corresponde a la tabla "**Brazo Invisible Epsylon Dlux Cruce**", si $\text{Potencia} \leq 140$ se usa el precio de "**Transformador 24V IP67 150W**", si $\text{Potencia} \leq 190$ se usa el precio de "**Transformador 24V IP67 240W**", si no, se usa el precio de "**Transformador 24V IP67 320W**".
+$$
+\begin{flalign}
+\text{Precio Transformador} = 
+\begin{cases}
+\text{Precio Transformador 24V IP67 150W} & \text{si } \text{Potencia} \leq 140 \\
+\text{Precio Transformador 24V IP67 240W} & \text{si } \text{Potencia} \leq 190 \\
+\text{Precio Transformador 24V IP67 320W} & \text{en otro caso}
+\end{cases}
+\end{flalign}
+$$
 
 # Costos GVM
 La suma de todos los totales anteriores.
@@ -135,6 +153,17 @@ Calcula la "**Tarifa GVM**" a partir de "**Costos GVM**", aplicando primero los 
 $$
 \begin{flalign}
 \text{Tarifa GVM} = 
-\text{CostosGVM} \mul (1 + \frac{\text{GastosGen}}{100}+\frac{\text{Ganancias}}{100}) \div (1 - \frac{\text{Descuento}}{100}) &&
+\text{CostosGVM} \mul (1 + \frac{\text{Gastos Gen.}}{100}+\frac{\text{Ganancias}}{100}) \div (1 - \frac{\text{Descuento}}{100}) &&
 \end{flalign}
 $$
+**Gastos Gen.**, **Ganancias** y **Descuento** son valores fijos.
+# Coste TVM
+No se presenta en BI_Epsylon
+
+# Tarifa TVM
+No se presenta en BI_Epsylon
+
+# DTO
+No se presenta en BI_Epsylon
+# Total TVM
+No se presenta en BI_Epsylon
