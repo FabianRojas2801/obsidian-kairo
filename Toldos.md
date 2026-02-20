@@ -1,5 +1,5 @@
 # Total
-En todas las filas, $\text{Precio}$ corresponde a $\text{Cantidad} \mul \text{Precio}$ redondeado a **2 decimales**.
+En todas las filas, $\text{Total}$ corresponde a $\text{Cantidad} \mul \text{Precio}$ redondeado a **2 decimales**.
 
 # Jgo Soporte
 - **Precio:** Corresponde a la tabla "Brazo Invisible Epsylon", fila **Jgo. Sop. Epsylon** columna **C/Dto**
@@ -117,7 +117,7 @@ $$
 \text{si } (\text{Linea} \leq 500) \land (\text{Salida} \leq 275) \\
 \text{Precio Casquillo Ø 80} + \text{Precio Casq. Maquina Ø 80 nylon} &
 \text{en otro caso}
-\end{cases}
+\end{cases} &&
 \end{flalign}
 $$
 
@@ -140,7 +140,7 @@ $$
 \text{Precio Transformador 24V IP67 150W} & \text{si } \text{Potencia} \leq 140 \\
 \text{Precio Transformador 24V IP67 240W} & \text{si } \text{Potencia} \leq 190 \\
 \text{Precio Transformador 24V IP67 320W} & \text{en otro caso}
-\end{cases}
+\end{cases} &&
 \end{flalign}
 $$
 
@@ -148,22 +148,67 @@ $$
 La suma de todos los totales anteriores.
 
 # Tarifa GVM
-Calcula la "**Tarifa GVM**" a partir de "**Costos GVM**", aplicando primero los recargos de "**Gastos Gen**." y "**Ganancias**", y después convirtiendo ese precio "neto" en un precio de tarifa antes de aplicar el “Descuento”. Al final redondea a 1 decimal.
+Se calcula a partir de "**Costos GVM**", aplicando primero los recargos de "**Gastos Gen**." y "**Ganancias**", y después convirtiendo ese precio "neto" en un precio de tarifa antes de aplicar el “Descuento”. Al final redondea a 1 decimal.
 
 $$
 \begin{flalign}
 \text{Tarifa GVM} = 
-\text{CostosGVM} \mul (1 + \frac{\text{Gastos Gen.}}{100}+\frac{\text{Ganancias}}{100}) \div (1 - \frac{\text{Descuento}}{100}) &&
+\text{Costos GVM} \mul \left( 1 + \frac{\text{Gastos Gen. GVM}}{100}+\frac{\text{Ganancias GVM}}{100} \right) \div \left( 1 - \frac{\text{Descuento GVM}}{100} \right) &&
 \end{flalign}
 $$
 **Gastos Gen.**, **Ganancias** y **Descuento** son valores fijos.
 # Coste TVM
-No se presenta en BI_Epsylon
-
+No se presenta en la hoja `BI_Epsylon`.
+Se calcula aplicando un descuento porcentual a la **Tarifa GVM** y redondeando el resultado a **2 decimales**.
+El descuento se encuentra en la celda **K46** en la hoja `BI_Cruce`,  **O44** en la hoja `BI_EpsyDLUX` y **K44** en `BI_Cruce_EpsyDlux`.
+$$
+\begin{flalign}
+\text{Coste TVM} = \text{Tarifa GVM} \mul \left(1 - \frac{\text{Descuento Coste TVM}}
+{100}\right) &&
+\end{flalign}
+$$
 # Tarifa TVM
-No se presenta en BI_Epsylon
+No se presenta en la hoja `BI_Epsylon`.
+Se calcula a partir del "**Coste TVM**" aplicando recargos por **Gastos Generales** y **Ganancias**, y después "deshaciendo" (dividiendo) el efecto de un descuento comercial, redondeando a 1 decimal.
+**Ganancias TVM** se encuentra en **K58** en la hoja `BI_Cruce`, **O55** en la hoja `BI_EpsyDLUX` y **K55** en la hoja `BI_Cruce_EpsyDlux`.
+**Gastos Gen. TVM** y **Descuento TVM** se encuentran debajo de **Ganancias TVM**.
 
+$$
+\begin{flalign}
+\text{Tarifa TVM} =
+\frac{
+	\text{Coste TVM} + \text{Coste TVM} \mul \frac{\text{Gastos Gen. TVM}}{100} + \text{Coste TVM} \mul \frac{\text{Ganancias TVM}}{100}
+} {
+	1 - \frac{\text{Descuento TVM}}{100}
+} &&
+\end{flalign}
+$$
+Se puede factorizar:
+$$
+\begin{flalign}
+\text{Tarifa TVM} =
+\text{Coste TVM} \mul \left(1 + \frac{\text{Gastos Gen. TVM}}{100} + \frac{\text{Ganancias TVM}}{100}\right)
+\div
+\left(1 - \frac{\text{Descuento TVM}}{100}\right) &&
+\end{flalign}
+$$
 # DTO
-No se presenta en BI_Epsylon
+No se presenta en la hoja `BI_Epsylon`.
+Se calcula como un porcentaje de la **Tarifa TVM**, en este caso el porcentaje queda fijo en **10%**.
+El **porcentaje** se define en la celda amarilla adyacente a la celda **DTO**.
+$$
+\begin{flalign}
+\text{DTO} =
+\text{Tarifa TVM} \mul \frac{\text{Porcentaje}}{100} &&
+\end{flalign}
+$$
+
 # Total TVM
-No se presenta en BI_Epsylon
+No se presenta en la hoja `BI_Epsylon`.
+Se calcula a partir de **Tarifa TVM** y el **porcentaje** de **DTO**.
+$$
+\begin{flalign}
+\text{Total TVM}= \text{Tarifa TVM} \mul \left( 1 - \frac{\text{Porcentaje}}{100} \right) &&
+\end{flalign}
+$$
+

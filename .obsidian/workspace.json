@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Toldos/Brazo Invisible Epsylon.md",
+                "file": "Toldos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Brazo Invisible Epsylon"
+              "title": "Toldos"
             }
           }
         ],
@@ -209,16 +209,18 @@
   },
   "active": "a9a49d24e6c8bc11",
   "lastOpenFiles": [
+    "Toldos.md",
+    "Barcodes.md",
     "Casing.md",
-    "Casing.bas",
+    "Kedeke.md",
+    "Ramas Activas Kairo.md",
     "Untitled.md",
-    "Toldos/Brazo Invisible Epsylon.md",
+    "Casing.bas",
     "Toldos",
     "head.html",
     "Nuevo documento de texto.txt",
     "Kairo Changelogs/2026_01_30/Proyectos agrupación por contrato.md",
     "preamble.sty",
-    "Kedeke.md",
     "Toldos/2026_02_16/Investigación.md",
     "Toldos/Untitled",
     "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
@@ -229,7 +231,6 @@
     "Kairo Changelogs/2026_02_04/Notas.md",
     "Kairo Changelogs/Tipos De Datos.md",
     "Kairo Changelogs/2026_02_04/res/VB6_vpNvQ0R5dC.jpg",
-    "Ramas Activas Kairo.md",
     "Untitled.base",
     "Kairo Changelogs/2026_02_04/res",
     "Kairo Changelogs/2026_01_15/Movimientos Inmovilizados.md",
@@ -238,7 +239,6 @@
     "Kairo Changelogs/2026_01_28/Optimización Grabar Línea Detalle.md",
     "Kairo Changelogs/2026_01_29/Arreglos de qsy.md",
     "Kairo Changelogs/2026_01_26/SQL Server.md",
-    "Barcodes.md",
     "MS SQL SV/Guía de migración a SQL Server.md",
     "Documentación BD.md",
     "Kairo Changelogs/2026_01_13/Arreglos Copias.md",

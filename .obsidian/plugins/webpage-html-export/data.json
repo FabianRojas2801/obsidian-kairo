@@ -213,7 +213,7 @@
     "faviconPath": "",
     "siteName": "Changelog",
     "iconEmojiStyle": "Native",
-    "exportRoot": "",
+    "exportRoot": "Toldos",
     "includePluginCss": [],
     "includeStyleCssIds": [
       "svelte-11adhly"
