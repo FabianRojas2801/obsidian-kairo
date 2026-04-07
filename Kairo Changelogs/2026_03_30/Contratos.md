@@ -5,14 +5,15 @@ Nueva tabla `Contratos_Proyecto`
 Call CrearNuevaTabla("Contratos_Proyecto", "Id", True, TipoAutonumerico, TamanoTipoCampo(TipoAutonumerico), "0", Base)
 Call CrearCampo("Numero", "Contratos_Proyecto", TipoTexto, TamanoTipoCampo(TipoTexto), "", Base, True)
 Call CrearCampo("Descripcion", "Contratos_Proyecto", TipoTexto, TamanoTipoCampo(TipoTexto), "", Base, True)
+Call CrearCampo("Estado", "Contratos_Proyecto", TipoByte, TamanoTipoCampo(TipoByte), "", Base, True)
 Call CrearCampo("Ficha_Id", "Contratos_Proyecto", TipoEnteroLargo, TamanoTipoCampo(TipoEnteroLargo), "", Base)
-Call CrearCampo("FechaInicio", "Contratos_Proyecto", TipoFecha, TamanoTipoCampo(TipoFecha), "", Base)
-Call CrearCampo("FechaFin", "Contratos_Proyecto", TipoFecha, TamanoTipoCampo(TipoFecha), "", Base)
-Call CrearCampo("FechaFirma", "Contratos_Proyecto", TipoFecha, TamanoTipoCampo(TipoFecha), "", Base)
-Call CrearCampo("ImporteTotal", "Contratos_Proyecto", TipoDouble, TamanoTipoCampo(TipoDouble), "", Base)
-Call CrearCampo("PorcentajeGastosGenerales", "Contratos_Proyecto", TipoDouble, TamanoTipoCampo(TipoDouble), "", Base)
-Call CrearCampo("PorcentajeBeneficiosIndustriales", "Contratos_Proyecto", TipoDouble, TamanoTipoCampo(TipoDouble), "", Base)
-Call CrearCampo("PorcentajeDeducciones", "Contratos_Proyecto", TipoDouble, TamanoTipoCampo(TipoDouble), "", Base)
+Call CrearCampo("Fecha_Inicio", "Contratos_Proyecto", TipoFecha, TamanoTipoCampo(TipoFecha), "", Base)
+Call CrearCampo("Fecha_Fin", "Contratos_Proyecto", TipoFecha, TamanoTipoCampo(TipoFecha), "", Base)
+Call CrearCampo("Fecha_Firma", "Contratos_Proyecto", TipoFecha, TamanoTipoCampo(TipoFecha), "", Base)
+Call CrearCampo("Importe_Total", "Contratos_Proyecto", TipoDouble, TamanoTipoCampo(TipoDouble), "", Base)
+Call CrearCampo("Porcentaje_Gastos_Generales", "Contratos_Proyecto", TipoDouble, TamanoTipoCampo(TipoDouble), "", Base)
+Call CrearCampo("Porcentaje_Beneficios_Industriales", "Contratos_Proyecto", TipoDouble, TamanoTipoCampo(TipoDouble), "", Base)
+Call CrearCampo("Porcentaje_Deducciones", "Contratos_Proyecto", TipoDouble, TamanoTipoCampo(TipoDouble), "", Base)
 ```
 
 # `ResumenEconomicoProyectosObraFrm.frm`
@@ -44,20 +45,16 @@ Me.ContratosBtn.Top = Me.SalirBtn.Top
 Me.ContratosBtn.Left = Me.VerDetalleBtn.Left - Me.ContratosBtn.Width - 50
 ```
 
-Debajo de
-```vb
-On Error Resume Next
-Me.Shape1(Me.OrdenListadoCombo.index).Visible = Me.OrdenListadoCombo.Visible
-On Error GoTo 0
-```
-
-Añadir
-```vb
-Call ContratosModalFrm.Resize
-```
-
 ## `ContratosBtn_Click`
 Nuevo método
+```vb
+Private Sub ContratosBtn_Click()
+    Call ContratosModalFrm.Show
+    ContratosModalFrm.Left = Me.Left + (Me.Width - ContratosModalFrm.Width) / 2
+    ContratosModalFrm.Top = Me.Top + (Me.Height - ContratosModalFrm.Height) / 2
+    Call ContratosModalFrm.ZOrder(0)
+End Sub
+```
 
 ## `SalirBtn_Click`
 
