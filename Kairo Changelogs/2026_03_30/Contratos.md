@@ -1,5 +1,11 @@
 # Base de datos
-Nueva tabla `Contratos_Proyecto`
+## Tabla `Servicios`
+Añadir
+```vb
+Call CrearCampo("Contrato_Id", "Servicios", TipoEnteroLargo, TamanoTipoCampo(TipoEnteroLargo), "", Base)
+```
+
+## Nueva tabla `Contratos_Proyecto`
 
 ```vb
 Call CrearNuevaTabla("Contratos_Proyecto", "Id", True, TipoAutonumerico, TamanoTipoCampo(TipoAutonumerico), "0", Base)
@@ -65,6 +71,3 @@ Call ContratosModalFrm.Hide
 
 # `ContratosModalFrm`
 Archivo nuevo
-
-cobro
-detalletarjetaregalo

@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Kairo Changelogs/2026_03_30/Contratos.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -194,8 +194,9 @@
   },
   "active": "b1f97c4ad0dd79a9",
   "lastOpenFiles": [
-    "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
+    "Kairo Changelogs/2026_03_30/Cambios.md",
     "Kairo Changelogs/2026_03_30/Contratos.md",
+    "Kairo Changelogs/2026_02_04/Economía Inmovilizados.md",
     "Kairo Changelogs/Tipos De Datos.md",
     "Kairo Changelogs/2026_02_04/Notas.md",
     "Kairo Changelogs/2026_03_30",
