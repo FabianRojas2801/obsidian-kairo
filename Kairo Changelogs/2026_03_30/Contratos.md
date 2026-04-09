@@ -1,14 +1,14 @@
 Lunes 30/03/2026 - Jueves 09/04/2026
 
-## Base de datos (`!!ActualizadorBD/MainBas.bas`)
+# Base de datos (`!!ActualizadorBD/MainBas.bas`)
 
-### Tabla `Servicios`
+## Tabla `Servicios`
 Añadir
 ```vb
 Call CrearCampo("Contrato_Id", "Servicios", TipoEnteroLargo, TamanoTipoCampo(TipoEnteroLargo), "", Base)
 ```
 
-### Nueva tabla `Contratos_Proyecto`
+## Nueva tabla `Contratos_Proyecto`
 ```vb
 Call CrearNuevaTabla("Contratos_Proyecto", "Id", True, TipoAutonumerico, TamanoTipoCampo(TipoAutonumerico), "0", Base)
 Call CrearCampo("Numero", "Contratos_Proyecto", TipoTexto, TamanoTipoCampo(TipoTexto), "", Base, True)
