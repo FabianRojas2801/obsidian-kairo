@@ -1,4 +1,4 @@
-Lunes 30/03/2026 - Jueves 09/04/2026
+Lunes 30/03/2026 - Jueves 09/04/2026. Añadido a Kairo el Viernes 10/04/2026.
 
 # Base de datos (`!!ActualizadorBD/MainBas.bas`)
 

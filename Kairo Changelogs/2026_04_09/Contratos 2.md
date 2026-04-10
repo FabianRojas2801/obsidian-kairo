@@ -1,4 +1,4 @@
-Jueves 09/04/2026
+Jueves 09/04/2026. Añadido a Kairo el Viernes 10/04/2026.
 
 ## `ContratosModalFrm`
 Archivo modificado
