@@ -10,7 +10,7 @@
     "postProcess": true,
     "displayProgress": true,
     "inlineHTML": false,
-    "exportPath": "C:\\Users\\Usuario\\Downloads\\Arreglos Correos",
+    "exportPath": "C:\\Users\\Usuario\\Downloads\\Arreglos Contratos",
     "filesToExport": [
       "Kairo Changelogs/2026_03_30/Contratos.md"
     ],
@@ -208,14 +208,14 @@
     "inlineOther": true,
     "combineAsSingleFile": true,
     "offlineResources": true,
-    "themeName": "",
+    "themeName": "Default",
     "slugifyPaths": true,
     "flattenExportPaths": false,
     "fixLinks": true,
     "faviconPath": "",
     "siteName": "Changelog",
     "iconEmojiStyle": "Native",
-    "exportRoot": "Kairo Changelogs/2026_03_30",
+    "exportRoot": "Kairo Changelogs/2026_04_16",
     "includePluginCss": [],
     "includeStyleCssIds": [
       "svelte-11adhly"

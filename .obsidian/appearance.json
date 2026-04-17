@@ -5,5 +5,6 @@
     "NoWrapCodeblocks",
     "no_wrap_codeblocks",
     "header_line"
-  ]
+  ],
+  "theme": "moonstone"
 }

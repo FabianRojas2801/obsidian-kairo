@@ -1,5 +1,10 @@
 Martes 14/04/2026 - Miércoles 15/04/2026
 
+## Resumen
+- Modificar fichaje perdía el ID del trabajador
+- Fichajes abiertos y modificados perdían sus modificaciones al actualizar datos de la app
+- Los ajustes de parada obligatoria no se sincronizaban con SQL Server
+
 ## `Daemon/ProcesosPrincipales.bas`
 
 ### `CargarPicajeAPP`
@@ -98,3 +103,43 @@ Por
 
 (Se cambia `usuario_id` por `Id`)
 
+### `ComprobandoParadaObligatoria`
+Debajo de
+```vb
+            'Caso 1) En este caso se divide en dos el picaje para respetar la parada obligatoria
+            FechaAuxiliar = 0
+            FechaAuxiliar = MiRc!Fecha_Salida
+            
+            'Modificando picaje para ajustar a salida obligatoria
+            MiRc.Edit
+            MiRc!Fecha_Salida = Format(MiRc!Fecha_Salida, "dd/mm/yyyy") & " " & Format(InicioParada, "hh:mm")
+            MiRc!Horas = DateDiff("n", MiRc!fecha_entrada, MiRc!Fecha_Salida) / 60
+            MiRc.Update
+```
+Añadir
+```vb
+If BaseAPPActiva Then guardarPicajeApp(MiRc!Id)
+```
+- - -
+Debajo de
+```vb
+            'Caso 3) En este caso se ajusta la hora de entrada para que conincida con la parada obligatoria
+            MiRc.Edit
+            MiRc!fecha_entrada = Format(MiRc!fecha_entrada, "dd/mm/yyyy") & " " & Format(FinParada, "hh:mm")
+            MiRc!Horas = DateDiff("n", MiRc!fecha_entrada, MiRc!Fecha_Salida) / 60
+            MiRc.Update
+```
+
+Añadir
+```vb
+If BaseAPPActiva Then guardarPicajeApp(MiRc!Id)
+```
+- - -
+Debajo de
+```vb
+'Caso 4) En este caso el fichaje se borra directamente (está dentro de la parada obligatoria de la empresa
+```
+Añadir
+```vb
+If BaseAPPActiva Then borrarPicajeApp(MiRc!Id)
+```

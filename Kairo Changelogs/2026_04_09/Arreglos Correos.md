@@ -1,4 +1,4 @@
-Viernes 10/04/2026
+ (MViernes 10/04/2026
 ## `DocumentosVentaFrm`
 
 Remplazar

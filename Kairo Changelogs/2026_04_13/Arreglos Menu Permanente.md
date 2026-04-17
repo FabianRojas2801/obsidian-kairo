@@ -1,5 +1,7 @@
-Lunes 13/04/2026
+Lunes 13/04/2026, Martes 14/04/2026,  Jueves 16/04/2026, Viernes 17/04/2026
 
+## `MouseWheelHoverScroll`
+Habilita soporte para grids sin cambiar el foco ni requerir que el grid tenga el foco.
 ## `MenuPermanenteFrm`
 ### (General)
 Añadir
@@ -9,7 +11,7 @@ Private AnchoLogo As Double
 Private HayAccesoRapido As Boolean
 ```
 
-## `Form_Load`
+### `Form_Load`
 Debajo de
 ```vb
 PosicionSuperiorInicial = 100
@@ -22,7 +24,61 @@ AnchoLogo = 100
 HayAccesoRapido = False
 ```
 
-## `CargarImagenCliente`
+- - -
+Debajo de
+```vb
+Me.GriAccesosDirectos.Font = FontNameGrid
+Me.GriAccesosDirectos.Font.Size = SizeFontGrid1
+Me.GriAccesosDirectos.GridColor = Blanco
+Me.GriAccesosDirectos.GridColorFixed = Blanco
+Me.GriAccesosDirectos.RowHeightMin = TamañoMinimoFila
+Me.GriAccesosDirectos.SelectionMode = flexSelectionFree
+Me.GriAccesosDirectos.AllowUserResizing = flexResizeColumns
+Me.GriAccesosDirectos.ScrollBars = flexScrollBarVertical
+Me.GriAccesosDirectos.MergeCells = flexMergeFree
+Me.GriAccesosDirectos.Rows = 1
+Me.GriAccesosDirectos.Cols = 2
+Me.GriAccesosDirectos.FixedRows = 0
+Me.GriAccesosDirectos.ColWidth(0) = 0       'Posicion / Id
+Me.GriAccesosDirectos.ColWidth(1) = Me.GriAccesosDirectos.Width
+Me.GriAccesosDirectos.colAlignment(1) = 1
+Me.GriAccesosDirectos.Row = 0
+Me.GriAccesosDirectos.Col = 0
+```
+Añadir
+```vb
+Call StartMouseWheelHoverScroll(Me.GriAccesosDirectos)
+```
+
+- - -
+Debajo de
+```vb
+Me.GridMenu.Font = FontNameGrid
+Me.GridMenu.Font.Size = SizeFontGrid1
+Me.GridMenu.GridColor = Me.Recuadro(0).BackColor
+Me.GridMenu.BackColor = Me.Recuadro(0).BackColor
+Me.GridMenu.BackColorBkg = Me.Recuadro(0).BackColor
+Me.GridMenu.GridColorFixed = Me.Recuadro(0).BackColor
+Me.GridMenu.RowHeightMin = TamañoMinimoFila
+Me.GridMenu.SelectionMode = flexSelectionFree
+Me.GridMenu.AllowUserResizing = flexResizeColumns
+Me.GridMenu.ScrollBars = flexScrollBarNone
+Me.GridMenu.MergeCells = flexMergeFree
+Me.GridMenu.Rows = 1
+Me.GridMenu.Cols = 2
+Me.GridMenu.FixedRows = 0
+Me.GridMenu.ColWidth(0) = 0       'Posicion / Id
+Me.GridMenu.ColWidth(1) = Me.GriAccesosDirectos.Width
+Me.GridMenu.colAlignment(1) = 1
+Me.GridMenu.Row = 0
+Me.GridMenu.Col = 0
+```
+Añadir
+```vb
+Call StartMouseWheelHoverScroll(Me.GridMenu)
+```
+
+### `CargarImagenCliente`
 
 Remplazar
 ```vb
@@ -57,7 +113,7 @@ Por
 ```
 
 
-## `Form_Resize`
+### `Form_Resize`
 
 Remplazar el método por:
 ```vb
