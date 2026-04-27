@@ -10,7 +10,7 @@
     "postProcess": true,
     "displayProgress": true,
     "inlineHTML": false,
-    "exportPath": "C:\\Users\\Usuario\\Downloads\\Arreglos Contratos",
+    "exportPath": "C:\\Users\\Usuario\\Downloads\\Fichaje 3",
     "filesToExport": [
       "Kairo Changelogs/2026_03_30/Contratos.md"
     ],
@@ -166,10 +166,10 @@
       "alwaysEnabled": false,
       "hideSettingsButton": false,
       "featurePlacement": {
-        "selector": "head",
+        "selector": "body",
         "type": "end"
       },
-      "sourcePath": "",
+      "sourcePath": "fix-copy-buttons.html",
       "includePath": "site-lib/html/custom-head.html"
     },
     "documentOptions": {
@@ -215,7 +215,7 @@
     "faviconPath": "",
     "siteName": "Changelog",
     "iconEmojiStyle": "Native",
-    "exportRoot": "Kairo Changelogs/2026_04_16",
+    "exportRoot": "Kairo Changelogs/2026_04_23",
     "includePluginCss": [],
     "includeStyleCssIds": [
       "svelte-11adhly"
