@@ -10,7 +10,7 @@
     "postProcess": true,
     "displayProgress": true,
     "inlineHTML": false,
-    "exportPath": "C:\\Users\\Usuario\\Downloads\\Fichaje 4",
+    "exportPath": "C:\\Users\\Usuario\\Downloads",
     "filesToExport": [
       "Kairo Changelogs/2026_03_30/Contratos.md"
     ],
@@ -208,14 +208,14 @@
     "inlineOther": true,
     "combineAsSingleFile": true,
     "offlineResources": true,
-    "themeName": "Default",
+    "themeName": "obsidian-current-theme",
     "slugifyPaths": true,
     "flattenExportPaths": false,
     "fixLinks": true,
     "faviconPath": "",
     "siteName": "Changelog",
     "iconEmojiStyle": "Native",
-    "exportRoot": "Kairo Changelogs/2026_04_23",
+    "exportRoot": "Kairo Changelogs/2026_04_13",
     "includePluginCss": [],
     "includeStyleCssIds": [
       "svelte-11adhly"
