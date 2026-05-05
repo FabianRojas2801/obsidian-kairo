@@ -7,5 +7,6 @@ Call CrearCampo("Descripcion", "Rutas", TipoTexto, TamanoTipoCampo(TipoTexto), "
 
 ## `ConfiguradorRutasModalFrm`
 
-Archivo nuevo
-
+Formulario nuevo
+## `ConfiguracionPedidosCliente`
+Formulario nuevo
